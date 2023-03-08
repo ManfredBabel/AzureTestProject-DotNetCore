@@ -59,4 +59,4 @@ steps:
   inputs:
     solution: $(solution)
     msbuildLocationMethod: 'version'
-    msbuildArguments: '/p:configuration=Debug /p:DeployOnBuild=true /p:PublishProfile=..\publish_profile.xml /p:password=$(PASSWORD) /p:username=$(USERNAME) /p:MSDeployServiceURL=$(IP_PRIVADA_SERVIDOR_DESPLIEGUE)'
+    msbuildArguments: '/p:configuration=Debug /p:DeployOnBuild=true /p:PublishProfile=..\publish_profile.xml /p:password="Admin_BCR321" /p:username="vm-bcr-win\adminbcr" /p:MSDeployServiceURL="10.1.0.7"'
