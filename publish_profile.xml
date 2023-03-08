@@ -5,10 +5,10 @@
     <PublishProvider>AzureWebSite</PublishProvider>
     <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
-    <SiteUrlToLaunchAfterPublish>http://demo.local</SiteUrlToLaunchAfterPublish>
+    <SiteUrlToLaunchAfterPublish>http://mywebsitenetcore</SiteUrlToLaunchAfterPublish>
     <LaunchSiteAfterPublish>True</LaunchSiteAfterPublish>
     <MSDeployServiceURL/>
-    <DeployIisAppPath>demo.local</DeployIisAppPath>
+    <DeployIisAppPath>mywebsitenetcore</DeployIisAppPath>
     <SkipExtraFilesOnServer>True</SkipExtraFilesOnServer>
     <MSDeployPublishMethod>WMSVC</MSDeployPublishMethod>
     <EnableMSDeployBackup>True</EnableMSDeployBackup>
