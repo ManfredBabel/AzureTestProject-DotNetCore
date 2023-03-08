@@ -53,3 +53,10 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+- task: MSBuild@1
+  displayName: 'MS Deploy'
+  inputs:
+    solution: $(solution)
+    msbuildLocationMethod: 'version'
+    msbuildArguments: '/p:configuration=Debug /p:DeployOnBuild=true /p:PublishProfile=..\publish_profile.xml /p:password=$(PASSWORD) /p:username=$(USERNAME) /p:MSDeployServiceURL=$(IP_PRIVADA_SERVIDOR_DESPLIEGUE)'
