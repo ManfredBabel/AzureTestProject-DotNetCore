@@ -54,6 +54,10 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
 
+- task: CmdLine@2
+  inputs:
+    script: 'dir'
+
 - task: MSBuild@1
   displayName: 'MS Deploy'
   inputs:
