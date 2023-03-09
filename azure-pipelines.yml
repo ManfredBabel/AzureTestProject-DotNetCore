@@ -64,7 +64,7 @@ steps:
     command: 'publish'
     publishWebProjects: true
     projects: '$(solution)'
-    arguments: '-p:SkipInvalidConfigurations=true -p:PublishProfile=".\publish_profile.xml" -p:password="Admin_BCR321" -p:username="vm-bcr-win\adminbcr" -p:MSDeployServiceURL="10.1.0.7:8172"'
+    arguments: '-p:SkipInvalidConfigurations=true -p:PublishProfile=.\publish_profile.xml -p:password=Admin_BCR321 -p:username=vm-bcr-win\adminbcr -p:MSDeployServiceURL=10.1.0.7:8172'
     zipAfterPublish: false
     modifyOutputPath: false
 
